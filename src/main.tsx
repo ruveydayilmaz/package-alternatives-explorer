@@ -13,7 +13,7 @@ const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/package-alternatives-explorer">
       <ErrorBoundary fallback={<Error />}>
         <QueryClientProvider client={queryClient}>
           <App />
